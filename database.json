@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "photos": ""
+    }
+  ],
+  
+  "comments": [
+    {
+      "id": 1,
+      "post_id": 1,
+      "user_id": 2,
+      "comment": "Hi José! Welcome to Geekbears ;)"
+    }
+  ],
+
+  "users": [
+    {
+      "id": 1,
+      "name": "José Trejo",
+      "username": "joseatrejos",
+      "password": "jats12345",
+    },
+    {
+      "id": 2,
+      "name": "Ivan Rangel",
+      "username": "ivan",
+      "password": "ivan12345",
+    }
+  ]
+}
