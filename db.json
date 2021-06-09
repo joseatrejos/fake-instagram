@@ -19,13 +19,13 @@
       "id": 1,
       "name": "José Trejo",
       "username": "joseatrejos",
-      "password": "jats12345",
+      "password": "jats12345"
     },
     {
       "id": 2,
       "name": "Ivan Rangel",
       "username": "ivan",
-      "password": "ivan12345",
+      "password": "ivan12345"
     }
   ]
 }
