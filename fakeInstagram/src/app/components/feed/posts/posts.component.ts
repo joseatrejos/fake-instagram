@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RestApiService } from '../../../services/rest-api.service'
+import { UsersApiService } from '../../../services/users-api.service'
 
 @Component({
   selector: 'app-posts',
@@ -10,11 +11,15 @@ import { RestApiService } from '../../../services/rest-api.service'
 export class PostsComponent implements OnInit {
 
   Post: any = [];
+  User: any = {};
 
-  constructor(public restApi: RestApiService) { }
+  constructor(public restApi: RestApiService, public usersApi: UsersApiService) { }
 
   ngOnInit() {
-    this.loadPosts()
+    this.loadPosts();
+    this.usersApi.getUser("1").subscribe((data: {}) => {
+      this.User = data;
+    })
   }
 
   // Get posts list
@@ -32,4 +37,5 @@ export class PostsComponent implements OnInit {
       })
     }
   }
+  
 }

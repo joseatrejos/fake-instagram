@@ -3,8 +3,6 @@
     <!-- Start: Post -->
     <div class="card-group" style="margin-top: 16px;" *ngFor="let post of Post">
 
-        {{post.id_user}}
-
         <div class="card">
             <!-- Username who posted the photo -->
             <div class="row" style="margin-top: 8px;">
@@ -19,12 +17,12 @@
 
                 <div class="col-10 col-sm-10 col-md-7"
                     style="padding-top: 7px;padding-bottom: 7px;padding-left: 8px;padding-right: 0px;">
-                    <h6>joseatrejos</h6>
+                    <h6>{{User.username}}</h6>
                 </div>
             </div>
 
             <!-- Post's photo -->
-            <img class="card-img w-100 d-block" src="assets/img/image.png">
+            <img class="card-img w-100 d-block" src="{{post.photo}}">
 
             <div class="card-body" style="padding-bottom: 0px;">
                 <!-- Start: Reaction Buttons -->

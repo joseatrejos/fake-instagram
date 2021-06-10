@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UsersApiService } from '../../../services/users-api.service'
+import { RestApiService } from '../../../services/rest-api.service'
 
 @Component({
   selector: 'app-profile-info',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileInfoComponent implements OnInit {
 
-  constructor() { }
+  User: any = {};
 
-  ngOnInit(): void {
+  constructor(public usersApi: UsersApiService, public restApi: RestApiService) { }
+
+  ngOnInit() {
+    this.usersApi.getUser("1").subscribe((data: {}) => {
+      this.User = data;
+    });
   }
+
 
 }
