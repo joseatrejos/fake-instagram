@@ -1,0 +1,105 @@
+<!-- Start: Left Side -->
+
+    <!-- Start: Post -->
+    <div class="card-group" style="margin-top: 16px;" *ngFor="let post of Post">
+
+        {{post.id_user}}
+
+        <div class="card">
+            <!-- Username who posted the photo -->
+            <div class="row" style="margin-top: 8px;">
+                <div class="col-2 col-sm-2 col-md-1 d-lg-flex justify-content-lg-center align-items-lg-center"
+                    style="padding-left: 0px;padding-right: 0px;">
+                    <a class="btn" role="button" href="index.html"
+                        style="text-align: left;padding-right: 0px;padding-left: 25px;">
+                        <img class="img-fluid" src="assets/img/profileImage.jpg"
+                            style="border-radius: 50%;max-height: 27px;">
+                    </a>
+                </div>
+
+                <div class="col-10 col-sm-10 col-md-7"
+                    style="padding-top: 7px;padding-bottom: 7px;padding-left: 8px;padding-right: 0px;">
+                    <h6>joseatrejos</h6>
+                </div>
+            </div>
+
+            <!-- Post's photo -->
+            <img class="card-img w-100 d-block" src="assets/img/image.png">
+
+            <div class="card-body" style="padding-bottom: 0px;">
+                <!-- Start: Reaction Buttons -->
+                <div class="row">
+                    <div class="col-11 col-sm-11 col-md-11">
+                        <a class="btn" role="button">
+                            <i class="far fa-heart"></i>
+                        </a>
+
+                        <a class="btn" role="button">
+                            <i class="far fa-comment"></i>
+                        </a>
+
+                        <a class="btn" role="button" href="index.html">
+                            <i class="far fa-paper-plane"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-1 col-sm-1 col-md-1 d-md-flex d-lg-flex justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center"
+                        style="font-size: 24px;">
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                </div>
+                <!-- End: Reaction Buttons -->
+
+                <!-- Start: Number of Likes -->
+                <div class="row">
+                    <div class="col-md-12" style="margin-bottom: 4px;">
+                        <h6>36 Likes</h6>
+                    </div>
+                </div>
+                <!-- End: Number of Likes -->
+
+                <!-- Start: Comments -->
+                <div class="row" style="margin-top: -6px;">
+                    <div class="col-11 col-sm-11 col-md-11">
+                        <p class="d-md-flex align-items-md-center" style="min-height: 100%;">
+                            <strong>ivan</strong>
+                            &nbsp;Hi José! Welcome to Geekbears ;)
+                        </p>
+                    </div>
+
+                    <div class="col-1 col-sm-1 col-md-1 d-flex d-md-flex d-lg-flex justify-content-center align-items-md-center justify-content-lg-center align-items-lg-center"
+                        style="font-size: 14px;">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- End: Comments -->
+
+                <!-- Start: Post's Publish Date -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <span style="color: rgb(149,149,149);">12/05/2021</span>
+                    </div>
+                </div>
+                <!-- End: Post's Publish Date -->
+
+                <hr>
+
+                <!-- Start: Comment Input -->
+                <div class="row" style="margin-top: -14px;">
+                    <div class="col-md-12" style="margin-top: 10px;">
+                        <div class="input-group">
+                            <input class="form-control btnNoBorders" type="text"
+                                placeholder="Add a comment..."
+                                style="border-style: none;padding-bottom: 16px;"/>
+
+                            <button class="btn text-primary btnNoBorders" type="button"
+                                style="border-style: none;border-left-style: none;padding-bottom: 16px;">Publish</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Comment Input -->
+            </div>
+        </div>
+    </div>
+    <!-- End: Post -->
+<!-- End: Left Side -->

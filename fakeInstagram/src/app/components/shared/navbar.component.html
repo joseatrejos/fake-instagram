@@ -1,0 +1,68 @@
+<!-- Start: Navigation with Search -->
+<nav class="navbar navbar-light navbar-expand-md navigation-clean-search navbar-expand"
+style="border-bottom-style: none;border-bottom-color: var(--bs-secondary);">
+    <div class="container">
+        
+        <!-- Logo -->
+        <a class="navbar-brand" [routerLink]="['/feed']">
+            <img src="assets/img/logo.png">
+        </a>
+
+        <!-- Collapse (Unused but written here in case it's needed) -->
+        <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+            <span class="visually-hidden">Toggle navigation</span>
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Searchbar and NavLinks -->
+        <div class="collapse navbar-collapse" id="navcol-1">
+
+            <!-- Searchbar -->
+            <form class="mx-auto search-form" target="_self">
+                <div class="d-none d-sm-none d-md-flex align-items-center">
+                    <div class="input-group">
+                        <span class="input-group-text" style="background: transparent;border-right-style: none;">
+                            <i class="fa fa-search" style="border-bottom-style: none;"></i>
+                        </span>
+
+                        <input class="form-control" type="text" placeholder="Search"
+                            style="border-left-style: none;"/>
+                    </div>
+
+                    <label class="form-label d-flex mb-0" for="search-field"></label>
+                </div>
+            </form>
+
+            <a class="btn btnNoBorders" role="button" >
+                <i class="fas fa-home"></i>
+            </a>
+
+            <a class="btn btnNoBorders" role="button">
+                <i class="fab fa-facebook-messenger"></i>
+            </a>
+
+            <a class="btn btnNoBorders" role="button">
+                <i class="fas fa-compass"></i>
+            </a>
+
+            <a class="btn btnNoBorders" style="margin-right: 5px;">
+                <i class="fas fa-heart"></i>
+            </a>
+
+            <div class="dropdown">
+                <a aria-expanded="false" data-bs-toggle="dropdown" href="#">
+                    <img class="img-fluid" src="assets/img/profileImage.jpg"
+                        style="max-height: 27px;border-radius: 50%;">
+                </a>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" [routerLink]="['/profile']">Profile</a>
+
+                    <a class="dropdown-item" [routerLink]="['/login']">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- End: Navigation with Search -->

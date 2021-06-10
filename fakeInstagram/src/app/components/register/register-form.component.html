@@ -1,0 +1,29 @@
+<section class="login-clean" style="background-color: transparent;font-family: Poppins, sans-serif;">
+    <form data-aos="zoom-out" data-aos-once="true" method="post" style="margin-top: 40px;" action="login.html">
+
+        <!-- Logo -->
+        <div class="illustration">
+            <img src="assets/img/logo.png">
+        </div>
+
+        <div class="form-group mb-3">
+            <input [(ngModel)]="UserDetails.name" class="form-control" type="text" placeholder="Name"/>
+        </div>
+
+        <div class="form-group mb-3">
+            <input [(ngModel)]="UserDetails.username" class="form-control" type="email" placeholder="Username"/>
+        </div>
+
+        <div class="form-group mb-3">
+            <input [(ngModel)]="UserDetails.password" class="form-control" type="password" name="password" placeholder="Password"/>
+        </div>
+
+        <!-- Register Button -->
+        <div class="form-group mb-3">
+            <button class="btn btn-primary d-block w-100" ng-click="addUser()" style="background-color: #00b5a8;">Register</button>
+        </div>
+
+        <!-- Back to Log in Button -->
+        <a class="forgot" [routerLink]="['/login']">Log in</a>
+    </form>
+</section>
