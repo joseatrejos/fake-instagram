@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     </link>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    </link>
+
     <link rel="stylesheet" href="assets/css/styles.min.css">
     </link>
 </head>
@@ -32,7 +35,7 @@
 <body style="background-color:#FAFAFA;">
     <!-- Start: Navigation with Search -->
 
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean-search"
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-search navbar-expand"
         style="border-bottom-style: none;border-bottom-color: var(--bs-secondary);">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -47,7 +50,7 @@
 
             <div class="collapse navbar-collapse" id="navcol-1">
                 <form class="mx-auto search-form" target="_self">
-                    <div class="d-flex align-items-center">
+                    <div class="d-none d-sm-none d-md-flex align-items-center">
                         <div class="input-group">
                             <span class="input-group-text" style="background: transparent;border-right-style: none;">
                                 <i class="fa fa-search" style="border-bottom-style: none;"></i>
@@ -101,7 +104,8 @@
             <div class="row" style="margin-bottom: 8px;">
                 <!-- Start: Left Side -->
 
-                <div class="col-md-12 col-lg-8 col-xxl-8 mt-3" style="margin-top: 0px;">
+                <div class="col-md-12 col-lg-8 col-xxl-8 mt-3" data-aos="fade" data-aos-duration="600"
+                    data-aos-once="true" style="margin-top: 0px;">
                     <!-- Start: Post -->
 
                     <div class="card-group" style="margin-top: 16px;">
@@ -212,7 +216,8 @@
                 <!-- End: Left Side -->
                 <!-- Start: Right Side -->
 
-                <div class="col-md-4 col-xxl-4 d-none d-sm-none d-md-none d-lg-flex order-md-last mt-3 position-sticky">
+                <div class="col-md-4 col-xxl-4 d-none d-sm-none d-md-none d-lg-flex order-md-last mt-3 position-sticky"
+                    data-aos="fade" data-aos-duration="600" data-aos-once="true">
                     <div class="card-group" style="margin-top: 16px;">
                         <div class="card">
                             <div class="card-body">
@@ -301,6 +306,7 @@
 
     <!-- End: Content -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>
 
